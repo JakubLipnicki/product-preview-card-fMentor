@@ -94,3 +94,79 @@ p, h1 {
     padding: 0 0.5em 0 0;
     border-radius: 0;
 }
+.mobile-hidden{
+    display: none;
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        overflow: hidden;
+        height: 100vh;
+        margin: 0;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    button{
+        width: 80%;
+        margin: 0;
+        cursor: pointer;
+        margin-top: 2.3em;
+    }
+    button:hover{
+        background-color: hsl(212, 21%, 17%);
+    }
+    h1{
+        margin-top: 0.8em;
+    }
+    .container{
+        display: flex;
+        width: 45%;
+        height: 60%;
+    }
+    .lower-container{
+        width: 50%;
+        padding: 2.2em 0;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .image-container{
+        height: 100%;
+        width: 50%;
+    }
+    .mobile-hidden{
+        display: block;
+    }
+    .desktop-hidden{
+        display: none;
+    }
+    .prices{
+        margin-top: 1.75em;
+    }
+    .big-price{
+        width: 50%;
+    }
+    .small-price{
+        width: 50%;
+        padding-left: 1.8em;
+    }
+    #description{
+        margin-top: 2em;
+        line-height: 1.7em;
+        font-size: 1em;
+    }
+    #perfume{
+        letter-spacing: 0.55em;
+    }
+    #perfume, #description{
+        padding: 0;
+    }
+
+    #perfume, h1, #description, #prices, button, .prices{
+        width: 78%;
+    }
+}
